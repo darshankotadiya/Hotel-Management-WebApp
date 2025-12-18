@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Project</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="header">
+        <b style="font-size: 25px;">Grand Hotel</b>
+        <div class="menu">
+            <span onclick="badlo('home')">Home</span>
+            <span onclick="badlo('rooms')">Rooms</span>
+            <span onclick="badlo('calc')">Price</span>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="home" class="tab">
+            <h1>Welcome to Grand Hotel</h1>
+            <p>Best rooms at cheap price.</p>
+        </div>
+
+        <div id="rooms" class="tab" style="display: none;">
+            <h2>Our Room List</h2>
+            <div id="box_container">
+                </div>
+        </div>
+
+        <div id="calc" class="tab" style="display: none;">
+            <h2>Calculate Bill</h2>
+            Enter Days: <input type="number" id="input_day" value="1">
+            <br><br>
+            <button onclick="hisab_karo()">Check Price</button>
+            <h3 id="final_bill"></h3>
+        </div>
+    </div>
+
+    
+</body>
+</html>
